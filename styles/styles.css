@@ -1,96 +1,117 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-html, 
+html,
 body {
-width: 100%;
-height: 100%;
-background-color: #183f11;
+  width: 100%;
+  height: 100%;
+  background-color: #183f11;
 
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    width: 90%;
-    height: 80%;
-    background-color:#658f20;
+.container {
+  width: 90%;
+  height: 80%;
+  background-color: #658f20;
 
-    display: flex;
+  display: flex;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    padding: 20px;
+  padding: 20px;
 }
 
 .img,
-.formulario{
-    width: 50%;
-    height: 100%;
+.formulario {
+  width: 50%;
+  height: 100%;
 }
 
-.img{
-    background-image: url("../imagem/29fc5a7bec4bc6168d41a9cdffb2ff33.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.img {
+  background-image: url("../imagem/29fc5a7bec4bc6168d41a9cdffb2ff33.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    background-color: #fff;
+  background-color: #fff;
 }
 
-.formulario{
-    padding-left: 70px;
+.formulario {
+  padding-left: 70px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.formulario h1{
-    color: #fff;
-    margin-bottom: 15px;
+.formulario h1 {
+  color: #fff;
+  margin-bottom: 15px;
 }
- 
+
 .formulario p {
-    color: #bebebe;
+  color: #bebebe;
 }
 
-form{
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-form input{
-    padding: 5px 10px;
-
-    background-color: #3c5423;
-    outline: none;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
+form input {
+  padding: 5px 10px;
+  width: 100%;
+  background-color: #50702e;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
 }
 
-form div{
-    display: flex;
-    flex-direction: column;
+#labelNome,
+#labelIdade,
+#labelSenha,
+#labelEmail {
+  width: calc(50% - 5px);
 }
 
-.button{
-    background-color: #658f20;
-    justify-content: center;
+#labelTelefone {
+  width: 100%;
 }
 
-form input::placeholder{
-    color: #fff;
+.button {
+  background-color: #658f20;
+  justify-content: center;
 }
 
-form #email,
-form #password {
-    width: 100%;
+form input::placeholder {
+  color: #fff;
+}
+
+.sexo {
+  width: 100%;
+  display: flex;
+}
+
+.terms {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.terms input {
+  width: 15px;
+}
+
+#estado {
+  background-color: #50702e;
+  color: #fff;
 }

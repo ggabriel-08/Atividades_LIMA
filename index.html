@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
     <section class="container">
-        <div class="img"></div>
-        <div class="formulario">
-            <h1>Cadastro</h1>
+      <div class="img"></div>
+      <div class="formulario">
+        <h1>Cadastro</h1>
         <p>Já tem uma conta? <a href="#">entre aqui</a></p>
         <p>Dados pessoais</p>
 
         <form action="" method="">
+          <label for="" id="labelNome"
+            >Nome<input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome inteiro"
+          /></label>
 
-            <div>
-                <label for="">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome inteiro">    
-            </div>
-            
-            <div>
-                <label for="">Idade</label>
-                <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
-            </div>
-           
-            <div>
-                <label for="">Email</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email"> 
-            </div>
-            
-            <div>
-                <label for="">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Senha">
-            </div>
-            
-            <div>
-                <label for="">Telefone</label>
-                <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone">
-            </div>
-         
-            <input type="checkbox" name="terms" id="terms">
+          <label for="" id="labelIdade"
+            >Idade<input
+              type="number"
+              name="idade"
+              id="idade"
+              placeholder="Digite sua idade"
+          /></label>
+
+          <label for="" id="labelEmail"
+            >Email<input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+          /></label>
+
+          <label for="" id="labelSenha"
+            >Senha<input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Senha"
+          /></label>
+
+          <label for="" id="labelTelefone"
+            >Telefone<input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Digite seu telefone"
+          /></label>
+
+          <div class="sexo">
+            <label for="feminino"
+              >feminino
+              <input type="radio" name="sexo" id="feminino" value="feminino" />
+            </label>
+
+            <label for="masculino"
+              >masculino
+              <input type="radio" name="sexo" id="masculino" value="masculino"
+            /></label>
+
+            <select name="estado" id="estado">
+              <option value="" disabled selected>Selecione um estado...</option>
+              <option value="São Paulo">São Paulo</option>
+              <option value="Minas Gerais">Minas Gerais</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Espirito Santo">Espirito Santo</option>
+              <option value="Paraná">Parana</option>
+              <option value="Santa Catarina">Santa Catarina</option>
+            </select>
+          </div>
+
+          <div class="terms">
+            <input type="checkbox" name="terms" id="terms" />
             <p>Eu concordo com os <a href="#">Termos e condições</a></p>
+          </div>
 
-            <button class="button">Cadastrar</button>
+          <button class="button">Cadastrar</button>
         </form>
-        </div>
-
-        
-
+      </div>
     </section>
-    
-</body>
+  </body>
 </html>

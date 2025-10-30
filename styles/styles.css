@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, 
+body {
+width: 100%;
+height: 100%;
+background-color: #183f11;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+    width: 90%;
+    height: 80%;
+    background-color:#658f20;
+
+    display: flex;
+
+    overflow: hidden;
+
+    padding: 20px;
+}
+
+.img,
+.formulario{
+    width: 50%;
+    height: 100%;
+}
+
+.img{
+    background-image: url("../imagem/29fc5a7bec4bc6168d41a9cdffb2ff33.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-color: #fff;
+}
+
+.formulario{
+    padding-left: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario h1{
+    color: #fff;
+    margin-bottom: 15px;
+}
+ 
+.formulario p {
+    color: #bebebe;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input{
+    padding: 5px 10px;
+
+    background-color: #3c5423;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    background-color: #658f20;
+    justify-content: center;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+form #email,
+form #password {
+    width: 100%;
+}
